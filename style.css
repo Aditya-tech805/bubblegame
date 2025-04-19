@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    font-family: "Gilroy";
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(173, 241, 173);
+}
+
+#panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    overflow: hidden; /* This is okay now because the button fits */
+}
+
+#paneltop{
+    padding: 0px 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: green;
+    color: white;
+
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    color:  rgb(26, 233, 26);
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+
+
+#panelbtm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Add this */
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+
+}
+
+#reset {
+    display: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4CAF50, #2e8b57);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#reset:hover {
+    background: linear-gradient(135deg, #2e8b57, #4CAF50);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
